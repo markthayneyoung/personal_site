@@ -28,6 +28,9 @@ function initSmoothScrolling() {
             
             jump(e.target.hash, {
                 duration: duration,
+                callback: function() {
+                    setFocus(e.target.hash);
+                }
             });
         }
     }
