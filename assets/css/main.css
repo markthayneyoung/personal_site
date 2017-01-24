@@ -6,7 +6,7 @@
     #personal_photo {
 	    -webkit-order: 1;
     	order: 1;
-    	max-height: 100%
+    	max-height: 100%;
     }
     #about_me {
 	    -webkit-order: 2;
@@ -121,6 +121,11 @@ p {
 #personal_photo {
     -webkit-flex: 3;
     flex: 3;
+
+}
+
+#personal_photo img {
+    border-radius: 25px;
 }
 
 .flex-item img {
