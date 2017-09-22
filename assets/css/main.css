@@ -291,9 +291,13 @@ header h2 {
 
 /*Work And Experience Section*/
 
-#work-header {
-	text-align: center;
-	color: #254D9C;
+#work-section{
+	padding-left: 0px;
+	padding-right:0px;
+}
+
+#workHeader {
+	padding-left:50px;
 }
 
 *, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
