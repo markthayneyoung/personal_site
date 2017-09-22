@@ -33,69 +33,78 @@ s<!DOCTYPE html>
 	<body>
 		<nav>
 			<ul>
-				<li><a href='#about_me'>About Me</a> </li>
-				<li><a href='#byu-section'>Education</a> </li>
+				<li><a href='#aboutMeText'>About Me</a> </li>
+				<li><a href='#byuSection'>Education</a> </li>
 				<li><a href='#work-section'>Work Experience</a></li>
 				<li><a href='#footcontent'>Learn More</a></li>
 			</ul>
 		</nav>
 
-		<section id="landing" class="flex-container">
+		<div id="landing" class="flex-container">
 
-			<article id="about_me" class="flex-item">
+			<article id="introduction" class="flex-item">
 				<span id="intro">
 					<p class="descriptionText"> Hello, my name is </p>
 					<h1> Tyler Doermann </h1>
 					<h2> (BackDoer) </h2>
 				</span>
-				<aside id="personal_photo">
+
+			</article>
+			<aside class="flex-item" id="personal_photo">
 				<img src="assets/imgs/exxonPic.jpg" alt="personal-photo">
 			</aside>
-			</article>
 
-			<article id="aboutMeText" class="flex-item">
-				
+			<section id="aboutMeText" class="flex-item offsetSection">
+				<header>
+					<h2>
+						About Me
+					</h2>
+				</header>
 				<p class="descriptionText"> 
 				   I have a passion for solving problems that ultimately led me to the field of business information systems. Challenges excite me, and the satisfaction that comes from finding an efficient solution is un-paralleled in my mind. 
 				   <br><br>
 
 					I am a software developer who specializes in web development, and I particularly enjoy using technology to create/optimize business processes.  As an extremely focused person, I always stick to a task until it is completed and completed right; I never settle for mediocrity. 
 				</p>
-			</article>
+			</section>
 
 
-		</section>
+		</div>
 
-			<header>
-				<h2> 
-					Education
-				</h2>
-			</header>
-			<section id="byu-section" class="flex-container">
 
-				<aside class="flex-item" id="byu-photo-cont">
-					<img id="byu-photo" src="assets/imgs/byu.png" alt="byu">
-				</aside>
+			<section id="byuSection">
 
-				<article class="flex-item descriptionText">
-					<p>
-						I am currently a Masters of Information Systems student at Brigham Young University, and I anticipate to graduate in April of 2018.
-					</p>
-				</article>
+				<article class="flex-container">
+					<aside class="flex-item" id="byu-photo-cont">
+						<header >
+							<h2> 
+								Education
+							</h2>
+						</header>
+						<img id="byu-photo" src="assets/imgs/byu.png" alt="byu">
+					</aside>
+
+					<article class="flex-item descriptionText">
+						<p>
+							I am currently a Masters of Information Systems student at Brigham Young University, and I anticipate to graduate in April of 2018.
+						</p>
+					</article>
+				<article>
 
 
 			</section>
 
 
 
-		<header>
-			<h2> 
-				Work Experience
-			</h2>
-		</header>
-		<div class="flex-container" id="work-section">
+
+		<section class="flex-container offsetSection" id="work-section">
 			
 			<div class="grid">
+				<header>
+					<h2> 
+						Work Experience
+					</h2>
+				</header>
 				<figure class="effect-sadie">
 					<img src="assets/imgs/exxonCube.jpeg" alt="img02"/>
 					<figcaption>
@@ -156,7 +165,7 @@ s<!DOCTYPE html>
 
 				
 			</div>
-		</div>
+		</section>
 
 		<footer>
 			<div id="footcontent">

@@ -1,3 +1,40 @@
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.offSetSection {
+	background-color:#dbdbdb;
+}
+
 /* Nav Bar */
 
 nav {
@@ -37,10 +74,9 @@ li a:hover, a:focus {
 
 header h2 {
 	font-size: 35px;
-	text-decoration: underline;
 	margin: 0px;
-	text-align: center;
 	color: #254D9C;
+	text-align:left;
 	font-style: italic;
 }
 
@@ -57,6 +93,10 @@ p {
     flex: 1 100%;
 }
 
+#byu-section > * {
+	flex: 1 50%;
+}
+
 .flex-container {
     display: -webkit-flex;
     display: flex;  
@@ -69,11 +109,15 @@ p {
 
 #landing {
     width: 100%;
+    padding:0px;
 
 }
 
-#about_me {
-
+#introduction {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
     padding: 20px;
     text-align: left;
 }
@@ -85,7 +129,7 @@ p {
 
 
 
-#about_me h1 {
+#introduction h1 {
 	font-size: 30px;
 	color: #254D9C;
 	font-family: Palatino;
@@ -93,7 +137,7 @@ p {
 	margin-top: 5px;
 }
 
-#about_me h2 {
+#introduction h2 {
 	margin-top: 0px;
 	font-size: 20px;
 	color: #254D9C;
@@ -141,10 +185,10 @@ footer p a:hover, a:focus {
 	font-size: 30px;
 }
 
-#about_me h1 {
+#introduction h1 {
 	font-size:50px;
 }
-#about_me h2 {
+#introduction h2 {
 	font-size:40px;
 }
 header h2 {
@@ -169,35 +213,53 @@ footer p {
 
 }
 
+#aboutMeText, #byuSection, #work-section {
+	padding:60px;
 
-@media only screen and (min-width: 1200px) {
-
-#about_me {
-	flex: 1 0px;
 }
-
 #aboutMeText {
-	flex: 1 0px;
-	margin-top: 70px;
+	margin-top:50px;
 }
+
+header {
+	margin-bottom:50px;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+header {
+	margin: 20px;
+}
+#introduction {
+	flex: 1 0px;
+	margin-top:150px;
+	text-align:center;
+}
+
+#personal_photo {
+	flex: 1 0px;
+	margin-top:50px;
+}
+
 
 .descriptionText {
 	font-size: 25px;
 }
 
-#about_me h1 {
+#introduction h1 {
 	font-size:50px;
 }
-#about_me h2 {
+#introduction h2 {
 	font-size:40px;
 }
 header h2 {
-	font-size:60px;
+	font-size:40px;
 }
 
 
 #personal_photo img{
-	width:300px;
+	width:350px;
 	margin:auto;
 }
 
@@ -251,7 +313,6 @@ body {
 
 section {
 	padding: 1em;
-	text-align: center;
 }
 
 

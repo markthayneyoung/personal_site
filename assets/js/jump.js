@@ -3,7 +3,7 @@ function jump(target, options) {
         start = window.pageYOffset,
         opt = {
             duration: options.duration,
-            offset: options.offset || -120,
+            offset: options.offset || -20,
             callback: options.callback,
             easing: options.easing || easeInOutQuad
         },
