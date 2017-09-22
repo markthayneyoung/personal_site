@@ -22,19 +22,6 @@
 
 }
 
-@media screen and (max-width: 500px) {
-	    li a {
-    	font-size: 11px;
-    }
-    #landing #about_me h1 {
-    	font-size: 40px;
-    }
-    #landing #about_me h2 {
-    	font-size: 30px;
-    }
-
-
-}
 
 
 nav {
@@ -87,6 +74,7 @@ p {
 .flex-container {
     display: -webkit-flex;
     display: flex;
+
 }
 
 #about_me {
@@ -136,7 +124,6 @@ p {
 
 #landing {
     width: 100%;
-    min-height: 600px;
     margin-top: 50px;
 
 }
