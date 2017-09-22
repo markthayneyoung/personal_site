@@ -48,24 +48,27 @@ s<!DOCTYPE html>
 
 		<section id="landing" class="flex-container">
 
-
 			<article id="about_me" class="flex-item">
 				<span id="intro">
-					<p> Hello, my name is </p>
+					<p class="descriptionText"> Hello, my name is </p>
 					<h1> Tyler Doermann </h1>
 					<h2> (BackDoer) </h2>
 				</span>
+				<aside id="personal_photo" class="flex-item">
+				<img src="assets/imgs/exxonPic.jpg" alt="personal-photo">
+			</aside>
+			</article>
+
+			<article id="aboutMeText" class="flex-item">
 				
-				<p> 
+				<p class="descriptionText"> 
 				   I have a passion for solving problems that ultimately led me to the field of business information systems. Challenges excite me, and the satisfaction that comes from finding an efficient solution is un-paralleled in my mind. 
 				   <br><br>
 
 					I am a software developer who specializes in web development, and I particularly enjoy using technology to create/optimize business processes.  As an extremely focused person, I always stick to a task until it is completed and completed right; I never settle for mediocrity. 
 				</p>
 			</article>
-			<aside id="personal_photo" class="flex-item">
-				<img src="assets/imgs/exxonPic.jpg" alt="personal-photo">
-			</aside>
+
 
 		</section>
 
@@ -80,7 +83,7 @@ s<!DOCTYPE html>
 					<img id="byu-photo" src="assets/imgs/byu.png" alt="byu">
 				</aside>
 
-				<article class="flex-item" id="byu-desc">
+				<article class="flex-item descriptionText">
 					<p>
 						I am currently a Masters of Information Systems student at Brigham Young University, and I anticipate to graduate in April of 2018.
 					</p>
@@ -102,7 +105,9 @@ s<!DOCTYPE html>
 				<figure class="effect-sadie">
 					<img src="assets/imgs/exxonCube.jpeg" alt="img02"/>
 					<figcaption>
+					
 						<h2>ExxonMobil</h2>
+					
 						<p>
 							<u>May-August 2017</u><br><br>
 							Enabled data-driven decisions by designing and developing a full-stack (MSSQL,C#,.NETWebAPIs,AngularJS,ArcGIS,Dojo, HTML5, CSS3), crowdsourced, web application to enable the consumption, management, and utilization of global real estate data
