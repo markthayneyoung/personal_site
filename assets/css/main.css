@@ -101,6 +101,41 @@ p {
 
 }
 
+
+/*Footer*/
+
+
+
+footer {
+    min-height: 25vh;
+    width: 100%;
+    color: #C7F0E5;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #254D9C;
+    padding: 20px;
+    border-top: 5px solid black;
+
+}
+
+footer p {
+	display: inline;
+	margin: 10px;
+	font-size:8px;
+
+}
+
+footer p a {
+	color: #C7F0E5;
+	text-decoration: none;
+	outline: none;
+}
+
+footer p a:hover, a:focus {
+	color: #FFFFFF;
+}
+
 @media only screen and (min-width: 600px) {
 .descriptionText {
 	font-size: 30px;
@@ -116,6 +151,10 @@ header h2 {
 	font-size:60px;
 }
 li a {
+	font-size:20px;
+}
+
+footer p {
 	font-size:20px;
 }
 
@@ -155,9 +194,7 @@ li a {
 header h2 {
 	font-size:60px;
 }
-li a {
-	font-size:20px;
-}
+
 
 #personal_photo img{
 	width:300px;
@@ -382,38 +419,6 @@ figure.effect-sadie:hover p {
 	}
 }
 
-/*Footer*/
-
-
-
-footer {
-    min-height: 25vh;
-    width: 100%;
-    color: #C7F0E5;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    background-color: #254D9C;
-    padding: 20px;
-    border-top: 5px solid black;
-
-}
-
-footer p {
-	display: inline;
-	margin: 10px;
-
-}
-
-footer p a {
-	color: #C7F0E5;
-	text-decoration: none;
-	outline: none;
-}
-
-footer p a:hover, a:focus {
-	color: #FFFFFF;
-}
 
 
 /* Smooth Scrolling */
