@@ -1,195 +1,140 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta https-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Tyler Doermann's personal website, student studying Information Systems at BYU from Highland UT">
-    <meta name="robots" content="follow">
-    <meta name="googlebot" content="index,follow">
-    <meta name="google-site-verification" content="google34e2a65891006843">
-    <meta name="subject" content="Tyler Doermann's personal website, student studying Information Systems at BYU from Highland UT">
-    <meta name="abstract" content="Tyler Doermann's personal website, student studying Information Systems at BYU from Highland UT">
-    <meta name="topic" content="This site is about Tyler Doermann, student from Highland UT currently living in Provo Utah">
-    <meta name="url" content="https://tylerdoermann.com/">
-    <meta name="coverage" content="Worldwide">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="theme-color" content="#FF5A5F">
-    <meta property="og:url" content="https://tylerdoermann.com">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Tyler Doermann">
-    <meta property="og:image" content="http://www.tylerdoermann.com/assets/images/preview-min.png">
-    <meta property="og:description" content="Tyler Doermann's personal website">
-    <meta property="og:site_name" content="Tyler Doermann Personal Website">
-    <meta property="og:locale" content="en_US">
-    <title>Tyler Doermann - Student and Programmer at Brigham Young University</title>
-    <title>
-      Tyler Doermann
-    </title>
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <link href="assets/imgs/favicon.ico" rel="icon" type="image/x-icon" />
-  </head>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="Styles.css" rel="stylesheet" type="text/css" />
 
-  <body>
-    <nav>
-      <ul>
-	<li><a href='#landing'>Home</a> </li>
-	<li><a href='#aboutMeText'>About Me</a> </li>
-	<li><a href='#byuSection'>Education</a> </li>
-	<li><a href='#work-section'>Work Experience</a></li>
-	<li><a href='#footcontent'>Learn More</a></li>
-      </ul>
-    </nav>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
-    <div id="landing" class="flex-container">
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
-      <article id="introduction" class="flex-item">
-	<span id="intro">
-	  <p class="descriptionText"> Hello, my name is </p>
-	  <h1> Tyler Doermann </h1>
-	  <h2> (BackDoer) </h2>
-	</span>
+      // Store hash
+      var hash = this.hash;
 
-      </article>
-      <aside class="flex-item" id="personal_photo">
-	<img src="assets/imgs/exxonPic.jpg" alt="personal-photo">
-      </aside>
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 
-      <section id="aboutMeText" class="flex-item offsetSection">
-	<header>
-	  <h2>
-	    About Me
-	  </h2>
-	</header>
-	<p class="descriptionText">
-	I have a passion for solving problems that ultimately led me to the field of business information systems. Challenges excite me, and the satisfaction that comes from finding an efficient solution is un-paralleled in my mind.
-	<br><br>
+<style type="text/css">
+.auto-style2 {
+	border: 2px solid #ffffff;
+}
+</style>
 
-	I am a software developer who specializes in web development, and I particularly enjoy using technology to create/optimize business processes.  As an extremely focused person, I always stick to a task until it is completed and completed right; I never settle for mediocrity.
-	</p>
-      </section>
+</head>
+
+<body>
 
 
-    </div>
+<div id="content">
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#intro">Intro</a>
+  <a href="#education">Education</a>
+  <a href="#workexperience">Work Experience</a>
+</div>
+
+<div id="home">
+<h3>Hi, my name is</h3>
+<h1>Mark Thayne Young</h1>
+
+<img src="pics/portrait1.jpg" alt="Portrait" height="513" width="383">
+
+</div>
+
+<div id="intro">
+<h2>Intro</h2>
+
+<p>Hello there! My name is Mark Young and I currently study Information Systems and Technology at Utah Valley University in Orem, Utah. Golden Gate Bridge
+I was born and raised in Modesto, California. I have an amazing brother and two incredible parents.</p>
+
+<p>My whole life I wanted to be a professional baseball player and I believed I had the potential to do so, 
+however my career was cut short due to elbow injuries (one needing surgery) and shoulder injuries (rotator cuff). 
+Although baseball was the love of my life, I have developed a passion within a short time for programming and web development.</p>
+
+<p>I am a very creative person. When I was young I started filming movies. I would grab my parents very old camcorder, 
+invite my friends over, and start filming away at what we believed to be the next big movie to grab the nation's attention. 
+These little movies actually taught me basic filming and directing skills, and as I got older and matured I started learning to edit film. 
+I started shooting at weddings and was actually paid for it. I even got an internship working for a professional baseball team in 
+Modesto, California notoriously known as the "Modesto Nuts". I filmed live footage as well as worked with some players filming local commercials.</p>
+
+<p>Even though I was good at filming, I didn't see a bright future in it. I wanted to find something that would allow me to be just as 
+creative while also providing a living for myself and loved ones. A good friend of mine intoduced me to the web development and programming world 
+and I knew I had found a potential fit for myself.</p>
+
+<p>So here I am, trying to make a living for myself doing something I love. 
+From baseball to creating websites and windows applications, my goal in life is to do something 
+I love and something that I find fun, and my belief is that I am on the right track!</p>
 
 
-    <section id="byuSection">
+</div>
 
-      <article class="flex-container">
-	<aside class="flex-item" id="byu-photo-cont">
-	  <header >
-	    <h2>
-	      Education
-	    </h2>
-	  </header>
-	  <img id="byu-photo" src="assets/imgs/byu.png" alt="byu">
-	</aside>
-
-	<article class="flex-item descriptionText">
-	  <p>
-	  I am currently a Masters of Information Systems student at Brigham Young University, and I anticipate to graduate in April of 2018.
-	  </p>
-	</article>
-	<article>
-
-
-    </section>
+<h2>Education</h2>
+<div id="education">
+<ul>
+<li>James C. Enochs High School 2008-2012</li>
+	<li>Mesa Community College 2012-2013</li>
+<li>Utah Valley University 2013-Today</li>
+</ul>
 
 
 
-
-    <section class="flex-container offsetSection" id="work-section">
-
-      <div id="workExperienceGrid" class="grid">
-	<header id="workHeader">
-	  <h2>
-	    Work Experience
-	  </h2>
-	</header>
-	<figure class="effect-sadie">
-	  <img src="assets/imgs/exxonCube.jpeg" alt="img02"/>
-	  <figcaption>
-
-	    <h2>ExxonMobil</h2>
-
-	    <p>
-	    <u>May-August 2017</u><br><br>
-	    Enabled data-driven decisions by designing and developing a full-stack (MSSQL,C#,.NETWebAPIs,AngularJS,ArcGIS,Dojo, HTML5, CSS3), crowdsourced, web application to enable the consumption, management, and utilization of global real estate data
-	    </p>
-	    <a href="http://www.3m.com/3M/en_US/health-information-systems-us/" target="_blank">
-	      Learn More
-	    </a>
-	  </figcaption>
-	</figure>
-	<figure class="effect-sadie">
-	  <img src="http://skyepoint.com/skyepoint/wp-content/uploads/medicaldata.jpg" alt="img02"/>
-	  <figcaption>
-	    <h2>3M</h2>
-	    <p>
-	    <u>May-December 2016</u><br><br>
-	    I streamlined several business processes for a team of 20 people by developing and deploying a full-stack (Python, Django, HTML, CSS, JavaScript, Linux) web application to manage a legacy Oracle database
-	    </p>
-	    <a href="http://www.3m.com/3M/en_US/health-information-systems-us/" target="_blank">
-	      Learn More
-	    </a>
-	  </figcaption>
-	</figure>
-	<figure class="effect-sadie">
-	  <img src="https://www.jbhifi.com.au/FileLibrary/ProductResources/Images/185749-M-LO.jpg" alt="img02"/>
-	  <figcaption>
-	    <h2>Blue Skies <br>Drone Rental</h2>
-	    <p>
-
-	    <u>February-May 2016 & August 2016-May 2017</u><br><br>
-	    I extended the capabilities of BlueSkies’ ecommerce WordPress site, to fit specific needs of the company, by developing and integrating PHP plugins
-	    </p>
-	    <a href="http://www.blueskiesdronerental.com" target="_blank">
-	      Learn More
-	    </a>
-
-	  </figcaption>
-	</figure>
-	<figure class="effect-sadie">
-	  <img src="http://image.made-in-china.com/43f34j00OeVaEIPKbMoL/Super-PRO-Series-Binaural-Headset-for-Call-Center-or-Office-HSM-602R-.jpg">
-	  <figcaption>
-	    <h2>Perfect Pitch</h2>
-	    <p>
-	    <u>September 2014-Feburary 2016 </u><br><br>
-	    I created a 10% growth in production by participating in and managing a flowcharting team, a scripting team, and a voice recording team that collectively carried out the product creation process
-	    </p>
-	    <a href="http://perfectpitchtech.com/" target="_blank">
-	      Learn More
-	    </a>
-
-	  </figcaption>
-	</figure>
+<img alt="UVU Logo" height="217" src="Pics/UVUlogo.png" width="217"></div>
 
 
-      </div>
-    </section>
+<div id="workexperience">
+<h2>Work Experience</h2>
 
-    <footer>
-      <div id="footcontent">
-	<p>&copy;<script>document.write(new Date().getFullYear())</script> Tyler Doermann</p>
+<table class="auto-style2" style="width: 100%">
+		<tr>
+			<td style="width: 118px; left: 4px; top: 4px">AutoZone</td>
+			<td style="left: 138px; top: 4px; width: 138px">2016 - 2018</td>
+			<td style="left: 263px; top: 4px; width: 531px">Commercial Manager, 
+			Commercial Specialist, Parts Sales</td>
+		</tr>
+		<tr>
+			<td style="width: 127px">Stanislaus Food Products</td>
+			<td>2015</td>
+			<td>Collected tomato/ olive samples to be tested for quality 
+			purposes</td>
+		</tr>
+		<tr>
+		<td>BRG Research</td>
+		<td>2013 - 2014</td>
+		<td>Conducted surveys for various companies</td>
+		</tr>
+	</table>
+
+
+	
+
+</div>
+
+</div>
+<footer>
 	<p>
-	<a href="https://www.linkedin.com/in/tylerdoermann" target="_blank" rel="noopener noreferrer">
-	  LinkedIn
-	</a>
-	</p>
-	<p>
-	<a href="https://github.com/backdoer" target="_blank" rel="noopener noreferrer">		Github
-	</a>
-	</p>
-	<p>
-	<a href="https://www.facebook.com/tyler.doermann" target="_blank" rel="noopener noreferrer">
-	  Facebook
-	</a>
-	</p>
+	Copyright 2017 Mark Young</p>
+</footer>
 
-      </div>
-    </footer>
-    <script src="assets/js/jump.js"></script>
-    <script src="assets/js/script.js"></script>
-  </body>
+</body>
 
 </html>
+
