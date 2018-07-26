@@ -1,0 +1,101 @@
+﻿
+
+#content{
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 40px;
+	background:white;
+}
+
+#intro{
+padding-top: 10px;
+	background-color:silver;
+}
+
+#workexperience
+{
+	padding-top: 10px;
+	background:silver;
+}
+
+
+h1{
+	text-align: center;
+	font-family :Arial, Helvetica, sans-serif;
+}
+h2{
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	
+}
+
+h3{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+img{
+	display: block;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
+
+p{
+	font-family:Arial, Helvetica, sans-serif;
+	padding-left:5px;
+	padding-right:5px;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+li{
+	font-family:Arial, Helvetica, sans-serif
+	
+}
+
+body {
+margin:0;
+background:black
+}
+
+footer{
+	background:green;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: green;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 800px;
+    
+    }
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:medium;
+}
+
+tr{
+	text-align:center;
+	position: relative;
+	border-bottom:thin;
+	border-bottom-color:white;
+	border:thin;
+}
+
+table {
+	padding-bottom: 10px;
+	position:relative;
+	font-size:medium;
+}
+

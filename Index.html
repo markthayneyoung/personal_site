@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<link href="Styles.css" rel="stylesheet" type="text/css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<style type="text/css">
+.auto-style2 {
+	border: 2px solid #ffffff;
+}
+</style>
+
+</head>
+
+<body>
+
+
+<div id="content">
+
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#intro">Intro</a>
+  <a href="#education">Education</a>
+  <a href="#workexperience">Work Experience</a>
+</div>
+
+<div id="home">
+<h3>Hi, my name is</h3>
+<h1>Mark Thayne Young</h1>
+
+<img src="pics/portrait1.jpg" alt="Portrait" height="513" width="383">
+
+</div>
+
+<div id="intro">
+<h2>Intro</h2>
+
+<p>Hello there! My name is Mark Young and I currently study Information Systems and Technology at Utah Valley University in Orem, Utah. Golden Gate Bridge
+I was born and raised in Modesto, California. I have an amazing brother and two incredible parents.</p>
+
+<p>My whole life I wanted to be a professional baseball player and I believed I had the potential to do so, 
+however my career was cut short due to elbow injuries (one needing surgery) and shoulder injuries (rotator cuff). 
+Although baseball was the love of my life, I have developed a passion within a short time for programming and web development.</p>
+
+<p>I am a very creative person. When I was young I started filming movies. I would grab my parents very old camcorder, 
+invite my friends over, and start filming away at what we believed to be the next big movie to grab the nation's attention. 
+These little movies actually taught me basic filming and directing skills, and as I got older and matured I started learning to edit film. 
+I started shooting at weddings and was actually paid for it. I even got an internship working for a professional baseball team in 
+Modesto, California notoriously known as the "Modesto Nuts". I filmed live footage as well as worked with some players filming local commercials.</p>
+
+<p>Even though I was good at filming, I didn't see a bright future in it. I wanted to find something that would allow me to be just as 
+creative while also providing a living for myself and loved ones. A good friend of mine intoduced me to the web development and programming world 
+and I knew I had found a potential fit for myself.</p>
+
+<p>So here I am, trying to make a living for myself doing something I love. 
+From baseball to creating websites and windows applications, my goal in life is to do something 
+I love and something that I find fun, and my belief is that I am on the right track!</p>
+
+
+</div>
+
+<h2>Education</h2>
+<div id="education">
+<ul>
+<li>James C. Enochs High School 2008-2012</li>
+	<li>Mesa Community College 2012-2013</li>
+<li>Utah Valley University 2013-Today</li>
+</ul>
+
+
+
+<img alt="UVU Logo" height="217" src="Pics/UVUlogo.png" width="217"></div>
+
+
+<div id="workexperience">
+<h2>Work Experience</h2>
+
+<table class="auto-style2" style="width: 100%">
+		<tr>
+			<td style="width: 118px; left: 4px; top: 4px">AutoZone</td>
+			<td style="left: 138px; top: 4px; width: 138px">2016 - 2018</td>
+			<td style="left: 263px; top: 4px; width: 531px">Commercial Manager, 
+			Commercial Specialist, Parts Sales</td>
+		</tr>
+		<tr>
+			<td style="width: 127px">Stanislaus Food Products</td>
+			<td>2015</td>
+			<td>Collected tomato/ olive samples to be tested for quality 
+			purposes</td>
+		</tr>
+		<tr>
+		<td>BRG Research</td>
+		<td>2013 - 2014</td>
+		<td>Conducted surveys for various companies</td>
+		</tr>
+	</table>
+
+
+	
+
+</div>
+
+</div>
+<footer>
+	<p>
+	Copyright 2017 Mark Young</p>
+</footer>
+
+</body>
+
+</html>
