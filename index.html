@@ -1,0 +1,133 @@
+<html lang="en">
+<head>
+        <title>Mark Young</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+                $(document).ready(function(){
+                  // Add smooth scrolling to all links
+                  $("a").on('click', function(event) {
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                      // Prevent default anchor click behavior
+                      event.preventDefault();
+                      // Store hash
+                      var hash = this.hash;
+                      // Using jQuery's animate() method to add smooth page scroll
+                      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                      $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                      }, 800, function(){
+                   
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                      });
+                    } // End if
+                  });
+                });
+        </script>
+</head>
+
+<body>
+
+        <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand">Mark Young</a>
+                  </div>
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#intro">Intro</a></li>
+                      <li><a href="#education">Education</a></li>
+                      <li><a href="#workexperience">Work Experience</a></li>
+                      <li><a href="https://www.linkedin.com/in/mark-young-3ab933160/" target="_blank">LinkedIn Profile</a></li>
+                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+    <div class = "container" id = "content">
+        <div class = "row">
+            <div class = "col-sm-12" id = "home">
+                    <h3>Hi, my name is</h3>
+                    <h1>Mark Thayne Young</h1>
+
+                    <img alt="UVU Logo" height="500" src="Pics/portrait1.jpg" width="320">
+            </div>
+            <div class = "col-sm-12" id = "intro">
+                <h2>Intro</h2>
+
+                    <p>I currently attend Utah Valley University, and I am studying Information Systems with an emphasis on Application Development. 
+                    My anticipated graduation date is May, 2020.</p>
+
+                    <p>I am looking to get into software development, as I have experience using C# and Javascript (used on this website). I also understand
+                    how to create and query databases using SQL. I am also proficient in HTML and CSS.</p>
+
+                    <p>I am always eager to learn more languages and I am excited to get more experience 
+                    within the software development field.
+                    I have a passion for problem solving and I enjoy the logical reasoning behind problem solving, and I love to see growth in my overall programming skill.</p>
+            </div>
+
+            
+            <div class = "col-sm-12" id="education">
+                <h2>Education</h2>
+                    <ul>
+                        <li>James C. Enochs High School 2008-2012</li>
+	                    <li>Mesa Community College 2012-2013</li>
+                        <li>Utah Valley University 2013-Today</li>
+                    </ul>
+                <img alt="UVU Logo" height="217" src="Pics/UVUlogo.png" width="217">
+            </div>
+
+            <div class= "col-sm-12" id="workexperience">
+                    <h2>Work Experience</h2>
+                    <br>          
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>Company</th>
+                          <th>Years Worked</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>AutoZone</td>
+                          <td>2016-2018</td>
+                          <td>Commercial Manager, Commercial Specialist, Parts Sales Manager</td>
+                        </tr>
+                        <tr>
+                          <td>Stanislaus Food Products</td>
+                          <td>2015</td>
+                          <td>Collected tomato/ olive samples to be tested for quality purposes</td>
+                        </tr>
+                        <tr>
+                          <td>BRG Research</td>
+                          <td>2013-2014</td>
+                          <td>Conducted surveys for various companies</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+
+    <br>
+    <div class="footer-copyright text-center py-3" id ="footer">
+    © 2018 Copyright: markyoung.info
+    </div>
+    <br>
+    
+</body>
+</html>
